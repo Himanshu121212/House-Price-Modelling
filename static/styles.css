@@ -1,0 +1,143 @@
+ body {
+    /* background-image: url('static/images/house3.jpg'); */
+    
+
+
+
+    background-image: linear-gradient(43deg, #4159d07c 0%, #C850C07c 46%, #FFCC707c 100%) ,url('static/house3.jpg');
+
+
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+
+
+.formContainer{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 40px;
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+.formContainer:first-child{
+    min-width: 450px;
+}
+
+
+
+.formContainer form input{
+    font-weight: 100;
+    outline: none;
+    border: none;
+    margin: 10px 0;
+    /* border-bottom: 1px solid #494949; */
+    width: 90%;
+    font-size: 20px;
+    padding-bottom: 5px;
+
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    /* border-image: linear-gradient(43deg, #4159d0 0%, #C850C0 46%, #FFCC70 100%); */
+    border-image: linear-gradient(#4949499a, #4949499a);
+    border-image-slice: 60 30;
+}
+
+
+
+.formContainer form input:focus{
+    border-image: linear-gradient(43deg, #4159d0 0%, #C850C0 46%, #FFCC70 100%);
+    border-image-slice: 60 30;
+}
+
+.predictionTextContainer{
+    left: 20%;
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+
+}
+
+
+
+.formContainer h1   {
+    color: #444444;
+    font-weight: bold;
+} 
+
+
+
+
+
+/* .predictButton{
+    font-size: 20px;
+    color: white;
+    padding: 5px 25px;
+    background: linear-gradient(43deg, #4159d0 0%, #C850C0 46%, #FFCC70 100%);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    transition: 0.3s background ease-in-out;
+}
+
+
+.predictButton:hover{
+    background: linear-gradient(43deg, #FFCC70 0%, #C850C0 46%, #4159d0 100%);
+} */
+
+
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+
+
+
+/* unvisited link */ 
+a:link { color: White; } 
+/* visited link */ 
+a:visited { color: green; }
+
+/* CSS code for button */

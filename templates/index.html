@@ -1,0 +1,68 @@
+
+<!-- Bangalore House Price Predictor -->
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Bangalore House Price Predictor ML App</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/styles.css">
+
+</head>
+
+<body>
+
+ 
+ 
+  
+  <!-- Form Get input to predict Marks-->
+  <!-- <center> -->
+    <div class="formContainer">
+      <form action="{{ url_for('predict')}}" method="post">
+        <h1>Let's find your dream home</h1>
+        
+        <input type="number" name="bathrooms" placeholder="Bathrooms" required="required"  step="1"
+        min="0" /><br>
+        <input type="number" name="balcony" placeholder="Balcony" required="required" step="1"
+        min="0" /><br>
+        <input type="number" name="price_per_sqft" placeholder="Price Per Squre Foot" required="required" step=".01" min="0" /><br>
+        <input type="number" name="total_sqft_int" placeholder="Total Squre Foot" required="required" 
+        step=".01" min="0" /><br>
+        <input type="number" name="bhk" placeholder="BHK" required="required"  step="1" min="0" /><br>
+        <input type="text" name="area_type" placeholder="Area Type" required="required" /><br>
+        <input type="text" name="availability" placeholder="House Availability" required="required" /><br>
+        <input type="text" name="location" placeholder="House Location" required="required" />
+        
+        <br>
+        
+        <br>
+        
+        <!-- Show button -->
+        <div class="button_cont"><a class="button_css" href="https://indianaiproduction.com/" target="_blank"
+          rel="nofollow noopener">
+          <button type="submit" class="btn-hover color-3">Submit</button></a>
+        </div>
+          
+      </form>
+    </div>
+      
+      
+      <!-- Show predicted output using ML model --> 
+      <div class="formContainer predictionTextContainer">
+        
+        <h2>{{ prediction_text }}</h2>
+        
+      </div>
+      
+    </div>
+    
+    
+    
+  </body>
+  </html>
+  
+  
